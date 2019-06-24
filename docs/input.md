@@ -6,8 +6,9 @@
     读取data/train_list里的txt文件，返回一个三维list[class][file][content]
       1. Class：类别，共9类
       2. File：class对应的所有的文件，排序按照list文件夹中的顺序生成
-      3. Content:根据传入的num值，对file所指的文件进行随机抽取（不足num条时全部输出），抽取条目为num条，，抽取整行，将num条数据组成一个list，该list即为content（当num参数为0时，不随机抽取，返回全部内容）
-    函数返回：将整个三维list输出到一个文件，数据结构自行设计，输出文件路径及命名为data/npy/train_num   num为传入的参数，文件后缀根据自己需要设计
+      3. Content:根据传入的num值，对file所指的文件进行随机抽取（不足num条时全部输出），抽取条目为num条，，抽取整行，将num条数据组成一个list，
+      该list即为content（当num参数为0时，不随机抽取，返回全部内容）函数返回：将整个三维list输出到一个文件，数据结构自行设计，
+       输出文件路径及命名为data/npy/train_num   num为传入的参数，文件后缀根据自己需要设计
 
 ## 2.def readTrainData2Mem()
 
